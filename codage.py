@@ -172,6 +172,7 @@ def plot_map_fill_multiples_ids(title, city, sf,progression,day,x_lim = None,y_l
         plt.xlim(x_lim)
         plt.ylim(y_lim)
     
+    #dossier dans lequel les cartes vont être enregistrées.A modifier avant utilisation. Mettre un chemin correcte.
     fig.savefig('/Users/adam/Desktop/Invasion_cartes/'+'Jour '+str(day)+'.png')
     plt.close('all')
     
@@ -316,12 +317,14 @@ def choose_city(soldats,jours):
     frames = []
     imgs=[]
     for y in range(1,j+2):
+        #dossier dans lequel les cartes vont être enregistrées.A modifier avant utilisation. Mettre un chemin correcte.
         path="/Users/adam/Desktop/Invasion_cartes/Jour "+str(y)+".png" #où sont stockées les images
         imgs.append(path)
     for i in imgs:
         new_frame = Image.open(i)
         frames.append(new_frame)
-
+    
+    #dossier dans lequel les cartes vont être enregistrées.A modifier avant utilisation. Mettre un chemin correcte.
     frames[0].save('/Users/adam/Desktop/Invasion_cartes/Invasion_'+str(soldats[0])+'_'+str(jours[0])+'.gif', format='GIF', #où sont stockées les images
                    append_images=frames[1:],
                    save_all=True,
@@ -329,12 +332,12 @@ def choose_city(soldats,jours):
     
     
     for t in range(1,j+2):
-                os.remove("/Users/adam/Desktop/Invasion_cartes/Jour "+str(t)+".png") #où sont stockées les images
+            #dossier dans lequel les cartes vont être enregistrées.A modifier avant utilisation. Mettre un chemin correcte.
+            os.remove("/Users/adam/Desktop/Invasion_cartes/Jour "+str(t)+".png") #où sont stockées les images
     
     return None
 
 
 
-choose_city([ #nombre de soldats ],[ #nombre de jours])
 
 
