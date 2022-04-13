@@ -3,18 +3,17 @@
 
 
 
-#limite de 100 jours pour envahir.
-#11 villes principales :Kyiv,Chernihiv,Kharkiv,Lugansk,Mykolaiv,Dnipro,Sumy,Vinnystsia,Rivne,Lviv,Chernivtsi
+
+#27 villes principales
 #3 zones de difficulté
-#zone 1 (jaune): Lugansk,Sumy,Kharkiv,Rivne,Lviv,Chernivtsi (-15% des troupes ennemies)
-#zone 2 (orange): Dnipro, Mykolaiv,chernihiv Vinnystsia (-25% des troupes ennemies)
-#zone 3 (rouge): Kyiv (-50% des troupes ennemies)
+#zone 1 (jaune): -15% des troupes ennemies
+#zone 2 (orange): -25% des troupes ennemies
+#zone 3 (rouge): -50% des troupes ennemies
 #La guerre est gagnee si la capitale tombe et si l'ennemi a encore des soldats dans son armee
 #On supose que l'ennemi est la Russie donc il doit envahir par l'est (sans passer par la Bielorussie)
 #Le but étant d'arriver à Kyiv donc de se diriger vers l'ouest. Par conséquent toute les villes à l'est de la progression Russe ne font plus partie des options des villes à envahir.
 #Il entre dans une ville de facon aleatoire
 #Il peut rentrer seulement dans les villes qui lui sont adjacentes
-# La zone entre Dnipro et Kyiv engendre des pertes considerables (-25%) ce qui oblige les soldats à la contourner
 #Temps de siege zone 1 = 10 jours
 #Temps de siege zone 2 = 25 jours 
 #Temps de siege zone 3 = 50 jours
