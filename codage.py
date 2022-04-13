@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
 
 
 #limite de 100 jours pour envahir.
@@ -20,8 +19,6 @@
 #Temps de siege zone 2 = 25 jours 
 #Temps de siege zone 3 = 50 jours
 
-
-# In[18]:
 
 
 import random
@@ -337,8 +334,6 @@ def choose_city(soldats,jours):
     
     return None
 
-
-# In[22]:
 
 
 choose_city([ #nombre de soldats ],[ #nombre de jours])
