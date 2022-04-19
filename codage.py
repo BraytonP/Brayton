@@ -39,6 +39,7 @@ sf=shp.Reader(shp_path)
 len(sf.shapes())
 sf.records()
 
+#Elle va lire le fichier shapefile de la carte de l’Ukraine et le transformer en tableau.
 def read_shapefile(sf):
     fields = [x[0] for x in sf.fields][1:]
     records = [list(i) for i in sf.records()]
@@ -49,6 +50,7 @@ def read_shapefile(sf):
 
 df=read_shapefile(sf)
 
+#Elle va venir afficher la carte et colorier les différentes zones passées en paramètre avec le paramètre ‘city’.
 def plot_map_fill_multiples_ids(title, city, sf,progression,day,x_lim = None,y_lim = None, figsize = (9,7)):
   
     
@@ -132,8 +134,10 @@ zone1 = {"Luhans'k",'Sumy','Kharkiv',"Donets'k",'Zaporizhzhya','Crimea',"Sevasto
 zone2 = {"Dnipropetrovs'k",'Poltava','Kirovohrad','Vinnytsya',"Ternopil'","Khmel'nyts'kyy",'Rivne','Cherkasy'}
 zone3 = {'Kiev','Kiev City','Chernihiv','Zhytomir'}
 
-#df=df[['ID_1','NAME_1','coords']]
-def choose_city(soldats,jours): 
+
+#Elle vient faire la simulation du jeu en suivant les regles enoncees precedemment pour un nombre de jours passé en parametre (jour[0]).
+#Elle vient aussi afficher les cartes pour chaque jour en faisant appel à la fonction plot_map_fill_multiples_ids.
+def choose_city(soldats,jours):
     K=random.random()
     L=random.random()
     S=random.random()
