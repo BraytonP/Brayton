@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
+#Lien afin de telechager le dossier de la carte.
+#https://drive.google.com/drive/folders/1nXoQlZihtNS06FkbbwcBDsFP4JAQkba7?usp=sharing
 
 
 #27 villes principales
